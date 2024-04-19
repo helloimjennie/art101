@@ -7,3 +7,38 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  #content {
+    background-color: rgb(207,255,249);
+  }
+
+  body {
+    background-color:rgb(249, 228, 245)
+  }
+
+  h1{
+    color: rgb(17, 89, 170);
+    font-size: 200%;
+    font-family:'Times New Roman', Times, serif;
+
+  }
+
+  p1 {
+    color: rgb(17, 89, 170);
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%
+
+  }
+  p2 {
+    color: rgb(17, 89, 170);
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%
+
+  }
+  img.flowers {
+    width: 300px;
+    border-style: dotted;
+    border-color:rgb(17, 89, 170); 
+  }
