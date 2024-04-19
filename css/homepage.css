@@ -26,8 +26,5 @@ img {
 .rotate-scale-up{-webkit-animation:rotate-scale-up .65s linear both;animation:rotate-scale-up .65s linear both}
 @-webkit-keyframes rotate-scale-up{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}50%{-webkit-transform:scale(2) rotateZ(180deg);transform:scale(2) rotateZ(180deg)}100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}}@keyframes rotate-scale-up{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}50%{-webkit-transform:scale(2) rotateZ(180deg);transform:scale(2) rotateZ(180deg)}100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}
 }
-
-.shadow-drop-2-tb{-webkit-animation:shadow-drop-2-tb 4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-tb 4s cubic-bezier(.25,.46,.45,.94) both}
-@-webkit-keyframes shadow-drop-2-tb{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent,0 0 0 0 transparent;box-shadow:0 0 0 0 transparent,0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 -12px 20px -12px rgba(0,0,0,.35),0 12px 20px -12px rgba(0,0,0,.35);box-shadow:0 -12px 20px -12px rgba(0,0,0,.35),0 12px 20px -12px rgba(0,0,0,.35)}}@keyframes shadow-drop-2-tb{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent,0 0 0 0 transparent;box-shadow:0 0 0 0 transparent,0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 -12px 20px -12px rgba(0,0,0,.35),0 12px 20px -12px rgba(0,0,0,.35);box-shadow:0 -12px 20px -12px rgba(0,0,0,.35),0 12px 20px -12px rgba(0,0,0,.35)}
-}
+/* This is the website I found this animation from ! https://css-tricks.com/advanced-css-animation-using-cubic-bezier/*/
 
