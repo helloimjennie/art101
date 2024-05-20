@@ -19,21 +19,24 @@ $("#submit").click(function(){
 } )
 
 //Task X 
-function anagram(input){
-    const charArray = inputString.split('');
+function anagram(inputString){
+    const charArray = inputString.split('')
     // Fisher-Yates (Knuth) shuffle algorithm tuat shuffles characters 
     for (let i = charArray.length - 1; i > 0; i--) { 
         const j = Math.floor(Math.random() * (i + 1)); 
-        charArray[i], charArray[j] = [charArray[j], charArray[i]];}
-        const anagram = charArray.join('');
-        return anagram; 
+        charArray[i], charArray[j] = [charArray[j], charArray[i]];
+    }
+    const anagram = charArray.join('');
+    return anagram; 
 }
 
+
+
 $("#anagram").click(function(){
-    const userName = $("#name").val();
-    const ColorName = $("#color").val();
-    const aniName = $("#animal").val(); 
-    userNameSorted = anagram (userName);
+    const userName = $("#user-name").val();
+    const ColorName = $("#age").val();
+    const aniName = $("#color").val(); 
+    userNameSorted = anagram(userName);
     colorNameSorted = anagram(ColorName);
     aniNameSorted = anagram(aniName); 
 
