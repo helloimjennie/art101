@@ -2,14 +2,27 @@
 <html>
 
 <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title> Lab 14 - Debugging Tools and Strategies </title>
+
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
     <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <!-- Lab-specifc CSS file for any special styling of this particular page -->
     <link rel="stylesheet" type="text/css" href="css/lab.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/lab.js"></script>
+
+    <!-- load jQuery library to make javascript easier (must be above our lab js)-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Link to javascript file - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
 
 <body>
-
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
     <main id="content">
         <section>
             <h1>Lab 14 - Debugging Tools and Strategies </h1>
@@ -20,12 +33,14 @@
                 <div id="challenge"></div>
             </div>
 
+
             <div class="minor-section">
                 <h2>Problems</h2>
-                <p>We ran into minor issues like the search bar wasn't showing up or we weren't able to type anything in
+                <p>We ran into minor issues like the javascript wasn't showing up or we weren't able to type anything in
                     it for it to show results.</p>
                 <div id="problems"></div>
             </div>
+
 
             <div class="minor-section">
                 <h2>Results</h2>
@@ -33,56 +48,27 @@
                     code. </p>
             </div>
 
+
             <div class="minor-section">
                 <h2>Debugging</h2>
-                <p>Debugging this code was probably the most frustrating part about this assignment. We weren't able to
-                    get it work the first time, and for some reason we
-                    spent so much time figuring out what was the reason behind the issue.
-                </p>
-                <div id="output"></div>
+                <p>Debugging this code was probably the most frustrating part about this assignment. First, I carefully
+                    reviewed the code to identify syntax errors or potential issues. The array “my transport” is
+                    declared with “const” to ensure it’s not accidentally reassigned, adhering to best practices in
+                    Javascript. I also used ‘transport. join(‘,’) to format the array as a comma-separated list for
+                    better readability in the output. I also corrected the HTML line break. After reviewing the
+                    Object Definition the ‘myMainRide’ object was correctly defined, and the ‘age’ method correctly
+                    calculates the car’s age.
+
             </div>
-            <nav id="links">
-            </nav>
             <div class="minor-section">
-                Where should we stop? <input type="number" min="0" max="1000" id="max"><br>
-                Which factors should print what?<br>
-                <table>
-                    <tr>
-                        <th>Factor</th>
-                        <th>Prints what?</th>
-                        <br>
-                    </tr>
-                    <tr>
-                        <td><input type="number" min=0 max="23" id="num0"></td>
-                        <td><input type="text" id="text0"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" min=0 max="23" id="num0"></td>
-                        <td><input type="text" id="text1"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" min=0 max="23" id="num1"></td>
-                        <td><input type="text" id="text2"></td> <!-- Closed the input tag -->
-                    </tr>
-                    <tr>
-                        <td><input type="number" min=0 max="23" id="num2"></td>
-                        <td><input type="text" id="text3"></td>
-                    </tr>
+                <h2>Script Output</h2>
+                <script src="js/lab.js"></script>
             </div>
-            </table>
-            <button id="submit">Run</button>
-            <div id="output"></div>
-            </div>
-            <nav id="links">
-                <a href="../index.html">Homepage</a>
-            </nav>
+        </section>
+        <nav id="links">
+            <a href="../index.html">Homepage</a>
+        </nav>
     </main>
-
-</body>
-
-</html>
-</main>
-
 </body>
 
 </html>

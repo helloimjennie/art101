@@ -1,30 +1,21 @@
-function fizzbuzzBoom(maxNums, factorObj) {
-    var outputStr = "";
-    for (var num = 1; num <= maxNums; num++) {
-        var str = "";
-        for (var factor in factorObj) {
-            if (num % factor == 0) {
-                str += factorObj[factor];
-            }
-        }
-        if (str !== "") {
-            outputStr += num.toString() + " - " + str + "!\n";
-        }
-    }
-    outputToPage(outputStr);
+// index.js - Arrays & Objects
+// Author: Jennifer Le & Revon Hollis
+// Date:4/26/24
+
+// Define Variables 
+myTransport = ["Honda Fit", "bike", "rides from friends", "lime scooter"]; 
+// Functions
+myMainRide = {
+  make: "Honda",
+  model: "Fit", 
+  color: "Orange", 
+  year: 2007, 
+  age: function() {
+    return 2024 - this.year;
+  }
 }
 
-function reportError(str) {
-    outputEl.innerHTML = "<div class='error'>" + str + "</div>";
-}
+document.writeln("Kinds of transportation I use: ", myTransport, "</br>");
+document.writeln("My Main Ride: <pre>",
+  JSON.stringify(myMainRide, null, '\t'), "</pre>");
 
-document.getElementById("submit").addEventListener("click", function() {
-    var max = document.getElementById("max").value;
-    console.log("max:", max);
-    if (!max) {
-        reportError("You must provide a maximum");
-    } else {
-        document.getElementById("output").innerHTML = "";
-        fizzbuzzBoom(parseInt(max), {3: "Fizz", 5: "Buzz"});
-    }
-});

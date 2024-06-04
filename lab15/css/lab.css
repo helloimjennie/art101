@@ -1,0 +1,10 @@
+body {
+    background-color: #e1b0b0;
+  }
+  
+  .minor-section {
+      padding: 11px;
+      margin-bottom: 10px;
+      border: solid 6px #fdcdcd;
+      background-color: #e1b0b0;
+    }
